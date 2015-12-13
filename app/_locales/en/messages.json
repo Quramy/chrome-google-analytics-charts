@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Google Analytics Charts",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "Adds a chart window into Google Analytics Query Explorer(https://ga-dev-tools.appspot.com/query-explorer/)",
+    "description": "The description of the application"
+  }
+}

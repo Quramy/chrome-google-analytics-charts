@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script type="text/javascript"> google.load('visualization', '1.1', {'packages':['corechart', 'calendar']});</script>
+  <script src="lib/angular.min.js"></script>
+  <script src="scripts/chart/main.js"></script>
+  <style type="text/css">
+div, body {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  background-color: #F4F3F1;
+}
+  </style>
+</head>
+<body>
+<article ng-app="chart" ng-controller="MainCtrl as main" style="padding: 20px">
+  <div>
+    Chart Type: 
+    <select ng-model="main.chartType">
+      <option value="{{chartType.value}}" ng-repeat="chartType in main.chartTypes">{{chartType.label}}</option>
+    </select> &nbsp;
+    Column Index(optional): 
+    <input type="text" ng-model="main.cols" placeholder="ex: 0,1,3,2"> &nbsp;
+    <button ng-click="main.render()">render</button>
+  </div>
+  <div id="chart"></div>
+</article>
+</body>
+</html>
