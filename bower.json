@@ -1,5 +1,5 @@
 {
-  "name": "ga-query-chart",
+  "name": "chrome-google-analytics-charts",
   "private": true,
   "version": "0.0.0",
   "dependencies": {
@@ -7,7 +7,5 @@
     "angular": "~1.4.8"
   },
   "devDependencies": {
-    "chai": "~3.4.2",
-    "mocha": "~2.3.4"
   }
 }
